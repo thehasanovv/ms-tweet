@@ -1,8 +1,8 @@
 package com.example.ms.tweet.mapper;
 
 import com.example.ms.tweet.dao.entity.TagEntity;
-import com.example.ms.tweet.dto.request.SaveTagDto;
-import com.example.ms.tweet.dto.response.TagResponse;
+import com.example.ms.tweet.model.request.SaveTagDto;
+import com.example.ms.tweet.model.response.TagResponse;
 
 public class TagMapper {
     public static TagEntity buildTagEntity(SaveTagDto dto) {

@@ -2,7 +2,7 @@ package com.example.ms.tweet.service;
 
 import com.example.ms.tweet.dao.entity.CommentEntity;
 import com.example.ms.tweet.dao.repository.CommentRepository;
-import com.example.ms.tweet.dto.response.CommentResponse;
+import com.example.ms.tweet.model.response.CommentResponse;
 import com.example.ms.tweet.exception.NotFoundException;
 import com.example.ms.tweet.mapper.CommentMapper;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.example.ms.tweet.constants.ExceptionConstants.COMMENT_NOT_FOUND_CODE;
-import static com.example.ms.tweet.constants.ExceptionConstants.COMMENT_NOT_FOUND_MESSAGE;
+import static com.example.ms.tweet.model.constants.ExceptionConstants.COMMENT_NOT_FOUND_CODE;
+import static com.example.ms.tweet.model.constants.ExceptionConstants.COMMENT_NOT_FOUND_MESSAGE;
 
 @Service
 @RequiredArgsConstructor

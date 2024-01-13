@@ -1,6 +1,6 @@
 package com.example.ms.tweet.controller;
 
-import com.example.ms.tweet.dto.response.CommentResponse;
+import com.example.ms.tweet.model.response.CommentResponse;
 import com.example.ms.tweet.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

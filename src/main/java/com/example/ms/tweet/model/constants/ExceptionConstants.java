@@ -1,4 +1,4 @@
-package com.example.ms.tweet.constants;
+package com.example.ms.tweet.model.constants;
 
 public interface ExceptionConstants {
     String UNEXPECTED_EXCEPTION_CODE = "UNEXPECTED_EXCEPTION";

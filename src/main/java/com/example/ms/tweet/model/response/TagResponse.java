@@ -1,4 +1,4 @@
-package com.example.ms.tweet.dto.response;
+package com.example.ms.tweet.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

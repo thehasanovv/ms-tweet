@@ -1,8 +1,8 @@
 package com.example.ms.tweet.mapper;
 
 import com.example.ms.tweet.dao.entity.PostEntity;
-import com.example.ms.tweet.dto.request.SavePostDto;
-import com.example.ms.tweet.dto.response.PostResponse;
+import com.example.ms.tweet.model.request.SavePostDto;
+import com.example.ms.tweet.model.response.PostResponse;
 
 public class PostMapper {
 

@@ -1,8 +1,8 @@
 package com.example.ms.tweet.controller;
 
-import com.example.ms.tweet.dto.request.SaveCommentDto;
-import com.example.ms.tweet.dto.request.SavePostDto;
-import com.example.ms.tweet.dto.response.PostResponse;
+import com.example.ms.tweet.model.request.SaveCommentDto;
+import com.example.ms.tweet.model.request.SavePostDto;
+import com.example.ms.tweet.model.response.PostResponse;
 import com.example.ms.tweet.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

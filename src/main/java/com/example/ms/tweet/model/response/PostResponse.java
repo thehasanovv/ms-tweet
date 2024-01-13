@@ -1,4 +1,4 @@
-package com.example.ms.tweet.dto.response;
+package com.example.ms.tweet.model.response;
 
 import com.example.ms.tweet.dao.entity.TagEntity;
 import lombok.AllArgsConstructor;
