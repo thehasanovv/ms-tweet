@@ -17,7 +17,7 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "post")
+@Table(name = "posts")
 public class PostEntity {
     @Id
     @GeneratedValue(strategy = IDENTITY)
@@ -35,7 +35,8 @@ public class PostEntity {
 
     @OneToMany(
             mappedBy = "post",
-            cascade = ALL
+            cascade = ALL,
+            fetch = LAZY
     )
     @ToString.Exclude
     private List<CommentEntity> comments;

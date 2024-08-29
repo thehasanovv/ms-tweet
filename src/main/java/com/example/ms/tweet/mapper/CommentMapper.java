@@ -16,7 +16,7 @@ public class CommentMapper {
         return CommentResponse.builder()
                 .id(entity.getId())
                 .content(entity.getContent())
-                .viewed(entity.isViewed())
+                .isViewed(entity.isViewed())
                 .build();
     }
 }

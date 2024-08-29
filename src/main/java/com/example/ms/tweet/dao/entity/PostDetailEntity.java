@@ -9,6 +9,7 @@ import java.util.Objects;
 
 import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.IDENTITY;
+
 @Entity
 @Getter
 @Setter
@@ -19,7 +20,6 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Table(name = "post_details")
 public class PostDetailEntity {
     @Id
-    @GeneratedValue(strategy = IDENTITY)
     private Long id;
 
     @CreationTimestamp

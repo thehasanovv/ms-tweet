@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 public class CommentResponse {
     private Long id;
     private String content;
-    private Boolean viewed;
+    private Boolean isViewed;
 }

@@ -3,23 +3,24 @@ package com.example.ms.tweet.service;
 import com.example.ms.tweet.dao.entity.PostEntity;
 import com.example.ms.tweet.dao.entity.TagEntity;
 import com.example.ms.tweet.dao.repository.PostRepository;
+import com.example.ms.tweet.exception.NotFoundException;
+import com.example.ms.tweet.mapper.PostMapper;
 import com.example.ms.tweet.model.request.SaveCommentDto;
 import com.example.ms.tweet.model.request.SavePostDto;
 import com.example.ms.tweet.model.response.PostResponse;
-import com.example.ms.tweet.exception.NotFoundException;
-import com.example.ms.tweet.mapper.PostMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.example.ms.tweet.model.constants.ExceptionConstants.POST_NOT_FOUND_CODE;
-import static com.example.ms.tweet.model.constants.ExceptionConstants.POST_NOT_FOUND_MESSAGE;
 import static com.example.ms.tweet.mapper.CommentMapper.buildCommentEntity;
 import static com.example.ms.tweet.mapper.PostDetailMapper.buildPostDetailEntity;
 import static com.example.ms.tweet.mapper.PostMapper.buildPostEntity;
 import static com.example.ms.tweet.mapper.PostMapper.buildPostResponse;
+import static com.example.ms.tweet.model.constants.ExceptionConstants.POST_NOT_FOUND_CODE;
+import static com.example.ms.tweet.model.constants.ExceptionConstants.POST_NOT_FOUND_MESSAGE;
 
 @Service
 @RequiredArgsConstructor

@@ -23,7 +23,7 @@ public class CommentEntity {
 
     private String content;
 
-    private boolean viewed;
+    private boolean isViewed;
 
     @ManyToOne(fetch = LAZY)
     @ToString.Exclude
